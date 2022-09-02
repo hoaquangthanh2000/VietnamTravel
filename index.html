@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./main.js">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <div id="header">
+        <div class="header__nav">
+            <div class="header__nav-link">
+                <p class="header__nav-link-text">TRAVEL ADVISORY:</p>See the latest updates <a href="">here</a>
+            </div>
+            <div class="header__nav-navbar">
+                <nav class="navbar bg-light header__nav-style">
+                    <div class="container-fluid">
+                        <img src="./img/vietnamtravel.jpg" alt="" width="150" height="110"
+                            class="d-inline-block align-text-top logoVN-travel">
+                        <ul class="header__nav-navbar-list">
+                            <li class="header__nav-navbar-item">
+                                <a class="navbar-brand">Live fully in Việt Nam</a>
+                                <ul class="nav__live-fully">
+                                    <li><a href="">Viet Nam Now</a></li>
+                                    <li><a href="">Why not VN</a></li>
+                                    <li><a href="">My Viet Nam</a></li>
+                                    <li><a href="">Virtual VN</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-navbar-item header__nav-places">
+                                <a class="navbar-brand">Places to go</a>
+                                <div class="navbar-wrap">
+                                    <div class="header__nav-places-list row">
+                                        <div class="col-md-2">
+                                            <p class="title">NORTHERN VIETNAM</p>
+                                            <a href="">
+                                                <img src="https://www.vietnam.travel/sites/default/files/styles/inspired_thumbnail_box/public/2017-06/hanoi-vietnam.jpg?itok=_KznfLHU"
+                                                    alt="">
+                                                <div class="info">
+                                                    <span class="info__title">
+                                                        Hà Nội
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <ul class="places__northern">
+                                                <li class="has-arrow"><a href=""> Hà Giang</a></li>
+                                                <li class="has-arrow"><a href="">Hạ Long</a></li>
+                                                <li class="has-arrow"><a href="">Mai châu</a></li>
+                                                <li class="has-arrow"><a href="">Ninh Bình</a></li>
+                                                <li class="has-arrow"><a href="">Sapa</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p class="title">CENTRAL VIETNAM</p>
+                                            <a href="">
+                                                <img src="https://www.vietnam.travel/sites/default/files/styles/inspired_thumbnail_box/public/2018-10/danang%20travel%20guide%20thumb.jpg?itok=nY3_-wA4"
+                                                    alt="">
+                                                <div class="info">
+                                                    <span class="info__title">
+                                                        Đà Nẵng
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <ul class="places__northern">
+                                                <li class="has-arrow"><a href=""> Đà Lạt </a></li>
+                                                <li class="has-arrow"><a href="">Hội An</a></li>
+                                                <li class="has-arrow"><a href="">Huế</a></li>
+                                                <li class="has-arrow"><a href="">Nha Trang</a></li>
+                                                <li class="has-arrow"><a href="">Phong Nha</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p class="title">SOUTHERN VIETNAM</p>
+                                            <a href="">
+                                                <img src="https://www.vietnam.travel/sites/default/files/styles/inspired_thumbnail_box/public/2017-07/travel-vietnam-4.jpg?itok=Tq5SAR65"
+                                                    alt="">
+                                                <div class="info">
+                                                    <span class="info__title">
+                                                        Hồ Chí Minh
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <ul class="places__northern">
+                                                <li class="has-arrow"><a href=""> Côn đảo </a></li>
+                                                <li class="has-arrow"><a href="">Bình Thuận</a></li>
+                                                <li class="has-arrow"><a href="">Cần Thơ</a></li>
+                                                <li class="has-arrow"><a href="">Châu Đốc</a></li>
+                                                <li class="has-arrow"><a href="">Phú QUốc</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 map-vietnam">
+                                            <img class="map-vietnam"
+                                                src="https://www.vietnam.travel/themes/custom/vietnamtourism/images/flyout-map.png"
+                                                alt="">
+                                            <a class="link north" href="">
+                                                <span>NORTHERN VIETNAM</span>
+                                            </a>
+                                            <a class="link central" href="">
+                                                <span>CENTRAL VIETNAM</span>
+                                            </a>
+                                            <a class="link south" href="">
+                                                <span>SOUTHERN VIETNAM</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__nav-navbar-item">
+                                <a class="navbar-brand">Things to do</a>
+                                <div class="row header__nav-thingstodo ">
+                                    <div class="col-md-5">
+                                        <div class="row travel-theme">
+                                            <div class="col-md-6">
+                                                <p class="title">HIGHLIGHTS</p>
+                                                <ul>
+                                                    <li class="has-arrow"><a href="">Food</a></li>
+                                                    <li class="has-arrow"><a href="">Nature</a></li>
+                                                    <li class="has-arrow"><a href="">Culture</a></li>
+                                                    <li class="has-arrow"><a href="">Cities</a></li>
+                                                    <li class="has-arrow"><a href="">Beaches</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="title">HOLIDAYS</p>
+                                                <ul>
+                                                    <li class="has-arrow"><a href=""> Adventure</a></li>
+                                                    <li class="has-arrow"><a href="">Wellness</a></li>
+                                                    <li class="has-arrow"><a href="">Family</a></li>
+                                                    <li class="has-arrow"><a href="">Luxury</a></li>
+                                                    <li class="has-arrow"><a href="">Golf</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2" style="display: flex;justify-content: center;">
+                                        <div class="separate"></div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p class="title">
+                                            UPCOMING FESTIVALS & EVENTS
+                                        </p>
+                                        <ul class="festival-events">
+                                            <li class="clearfix">
+                                                <a href="">
+                                                    <img src="https://www.vietnam.travel/sites/default/files/styles/thumbnail/public/2022-04/L%E1%BB%85%20h%E1%BB%99i%20Carnival%20-%20B%C3%A0%20N%C3%A0%20Hill%20%C4%90%C3%A0%20N%E1%BA%B5ng-2%20_0.jpg?itok=X20ZEIRh"
+                                                        alt="">
+                                                    <span class="fes-info">
+                                                        <span class="fes-content">
+                                                            <span class="title">Carnival Street Festival in Da
+                                                                Nang</span>
+                                                            <span class="desc">01 Apr 2022 - 30 Sep 2022</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="">
+                                                    <img src="https://www.vietnam.travel/sites/default/files/styles/thumbnail/public/2022-04/L%E1%BB%85%20h%E1%BB%99i%20Carnival%20-%20B%C3%A0%20N%C3%A0%20Hill%20%C4%90%C3%A0%20N%E1%BA%B5ng-2%20_0.jpg?itok=X20ZEIRh"
+                                                        alt="">
+                                                    <span class="fes-info">
+                                                        <span class="fes-content">
+                                                            <span class="title">Carnival Street Festival in Da
+                                                                Nang</span>
+                                                            <span class="desc">01 Apr 2022 - 30 Sep 2022</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="">
+                                                    <img src="https://www.vietnam.travel/sites/default/files/styles/thumbnail/public/2022-04/L%E1%BB%85%20h%E1%BB%99i%20Carnival%20-%20B%C3%A0%20N%C3%A0%20Hill%20%C4%90%C3%A0%20N%E1%BA%B5ng-2%20_0.jpg?itok=X20ZEIRh"
+                                                        alt="">
+                                                    <span class="fes-info">
+                                                        <span class="fes-content">
+                                                            <span class="title">Carnival Street Festival in Da
+                                                                Nang</span>
+                                                            <span class="desc">01 Apr 2022 - 30 Sep 2022</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="red-link">View all</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__nav-navbar-item"><a class="navbar-brand">Green travel</a></li>
+                            <li class="header__nav-navbar-item"><a class="navbar-brand">Travel offer</a></li>
+                        </ul>
+                        <form class="d-flex header_nav-input-search" role="search">
+                            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                            <div class="header-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div id="header__nav-js" class="header__nav-responsive">
+                <img src="/img/vietnamtravel.jpg" alt="" width="88" height="68"
+                            class="d-inline-block align-text-top logoVN-travel">
+                <nav id="main-nav-js" class="main-nav">
+                    <ul>
+                        <li class="nav-resp-item">
+                            <a href="">HOME</a>
+                            
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">Live fully in Vietnam </a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">Places to go</a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">Things to do</a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">Green travel</a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">Travel offer</a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-resp-item">
+                            <a href="">EN</a>
+                            <div class="icon-down">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div id="mobile-menu" class="header-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div  class="header-close remove">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Slide -->
+    <div id="slider">
+       <img width="100%" height="100%" src="./img/slider-vietnamtravel.jpg" alt="">
+    </div>
+    <!-- End Slide -->
+
+    <!-- Start Content -->
+    <div id="content">
+        <!-- inspired -->
+        <div id="inspired">
+            <div class="container">
+                <div class="container__header">
+                    <h2 class="section-heading ">LIVE FULLY IN VIETNAM</h2>
+                    <p class="section-desc">
+                        Let's explore, relax, and play.
+                        <br>
+                        <br>
+                        Choose from 5 beach holiday destinations in Vietnam: Phu Quoc, Danang, Quang Nam, Khanh Hoa, and
+                        Quang Ninh. And best of all, it's quarantine-free for the fully vaccinated. You are free to enjoy
+                        full holiday access upon arrival.
+                        <br>
+                        <br>
+                        Take in new sites, sounds, and flavors. Experiences that are truly memorable.
+                        Live fully in Vietnam.
+                        </p>
+                </div>
+                <div class="wrap-selector">
+                    <div  class="btn-selector">
+                        ALL
+                        <i class="fa-solid fa-sort-down "></i>
+                    </div>
+                    <ul class="inspired-nav">
+                        <li class="inspired-button active"><a href="" class="active">ALL</a> </li>
+                        <li class="inspired-button"><a href="">Explore</a></li>
+                        <li class="inspired-button"><a href="">Relax</a></li>
+                        <li class="inspired-button"><a href="">Play</a></li>
+                    </ul>
+                </div>
+                <div class="inspired__content">
+                    <div class="row">
+                        <div class="col-md-6 no-padding">
+                            <div class="article big zoomImg">
+                                <a href="">
+                                    <img
+                                        src="https://www.vietnam.travel/sites/default/files/styles/large/public/2022-07/shutterstock_339608291%20%281%29_1.jpg?itok=c9OAIpfN">
+                                    <div class="inspired__content-desc_content">
+                                        Best Cuisine in Binh Thuan - Food and Wine
+                                        <div class="inspired__content-desc_title">FOOD</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="article zoomImg">
+                                <a href="">
+                                    <img
+                                        src="https://www.vietnam.travel/sites/default/files/styles/large/public/2022-07/shutterstock_1899199933_1.jpg?itok=DWfPN_R1">
+                                    <div class="inspired__content-desc_content">
+                                        Top 5 things to do in Binh Thuan
+                                        <div class="inspired__content-desc_title">ADVENTURE</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 no-padding">
+                            <div class="article zoomImg">
+                                <a href="">
+                                    <img
+                                        src="https://www.vietnam.travel/sites/default/files/styles/inspired_thumbnail/public/2022-06/shutterstock_1129088318_0.jpg?itok=hRMzHiqw">
+                                    <div class="inspired__content-desc_content">
+                                        Binh Thuan - Beach vacation & Wellness 
+                                        <div class="inspired__content-desc_title">BEACHS</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 no-padding">
+                            <div class="article big zoomImg">
+                                <a href="">
+                                    <img
+                                        src="https://www.vietnam.travel/sites/default/files/styles/large/public/2022-06/shutterstock_592122920_1.jpg?itok=YEGANVrS">
+                                   
+                                    <div class="inspired__content-desc_content">
+                                        NHA TRANG'S MOST INSTAGRAMMABLE SPOTS IN 2022
+                                        <div class="inspired__content-desc_title">ADVENTURE</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 no-padding">
+                            <div class="article big zoomImg">
+                                <a href="">
+                                    <img
+                                        src="https://www.vietnam.travel/sites/default/files/styles/large/public/2022-06/shutterstock_665963464%20%281%29_1.jpg?itok=XSI_MOU1">
+                                   
+                                    <div class="inspired__content-desc_content">
+                                        THE SECRET WATERFALLS AND SPRINGS AROUND NHA TRANG
+                                        <div class="inspired__content-desc_title">NATURE</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- events -->
+        <div id="upcomming-events">
+            <div class="container">
+                <div class="container__header">
+                    <h2 class="section-heading inspired__heading">WHAT'S ON</h2>
+                    <p class="section-desc">
+                        Check out upcoming events in Vietnam
+                    </p>
+                </div>
+                <div class="wrap-events">
+                    <div class="wrap-slider">
+                        <div class="slider-events">
+                            <div class="slider-event-item zoomImg">
+                                <a href="">
+                                    <img src="./img/events/event1.jpg" alt="">
+                                    <span class="info">
+                                        <span class="date">
+                                            10 Sep 2022 - 10 Sep 2022
+                                        </span>
+                                        <h5 class="title">
+                                            Mid-Autumn Festival
+                                        </h5>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="slider-event-item ">
+                                <div class="block-event zoomImg">
+                                    <a href="">
+                                        <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x3/public/2022-07/Copy%20of%20782A8223_0.jpg?itok=3uIADrI3" alt="">
+                                        <span class="info">
+                                            <span class="date">
+                                                10 Sep 2022 - 10 Sep 2022
+                                            </span>
+                                            <h5 class="title">
+                                                Mid-Autumn Festival
+                                            </h5>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="block-event zoomImg">
+                                    <a href="">
+                                        <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x3/public/2022-07/shutterstock_1788780452_0.jpg?itok=zoPw532M" alt="">
+                                        <span class="info">
+                                            <span class="date">
+                                                10 Sep 2022 - 10 Sep 2022
+                                            </span>
+                                            <h5 class="title">
+                                                Mid-Autumn Festival
+                                            </h5>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="block-event zoomImg">
+                                    <a href="">
+                                        <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x3/public/2022-04/L%E1%BB%85%20h%E1%BB%99i%20Carnival%20-%20B%C3%A0%20N%C3%A0%20Hill%20%C4%90%C3%A0%20N%E1%BA%B5ng-2%20_0.jpg?itok=7Xp7YeKL" alt="">
+                                        <span class="info">
+                                            <span class="date">
+                                                10 Sep 2022 - 10 Sep 2022
+                                            </span>
+                                            <h5 class="title">
+                                                Mid-Autumn Festival
+                                            </h5>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-event-item zoomImg">
+                                <a href="" class="zoomImg">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x1/public/2022-07/shutterstock_1836855298_0.jpg?itok=r9UuUXsQ" alt="">
+                                    <span class="info">
+                                        <span class="date">
+                                            10 Sep 2022 - 10 Sep 2022
+                                        </span>
+                                        <h5 class="title">
+                                            Mid-Autumn Festival
+                                        </h5>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="slider-event-item zoomImg">
+                                <a href="" class="zoomImg">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x1/public/2022-04/221-S%C3%B3c%20Tr%C4%83ng-ngay%20hoi%20dua%20ghe%20ngo%20%281%29_0.jpg?itok=u24hL0Py" alt="">
+                                    <span class="info">
+                                        <span class="date">
+                                            10 Sep 2022 - 10 Sep 2022
+                                        </span>
+                                        <h5 class="title">
+                                            Mid-Autumn Festival
+                                        </h5>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="slider-event-item zoomImg">
+                                <a href="" class="zoomImg">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/event_landing_x1/public/2022-07/317-H%C3%A0%20N%E1%BB%99i-vanhoc0210%40gmail.com-ha%20noi%20don%20chao%20giang%20sinh%20va%20nam%20moi%20_0.jpg?itok=_C25CEjs" alt="">
+                                    <span class="info">
+                                        <span class="date">
+                                            10 Sep 2022 - 10 Sep 2022
+                                        </span>
+                                        <h5 class="title">
+                                            Mid-Autumn Festival
+                                        </h5>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="paper">
+                        <li class="page" >
+                            <a href="javascript:void(0);" data-index="0" class="dot-item active">AUG</a>
+                        </li>
+                        <li class="page" >
+                            <a href="javascript:void(0);" data-index="1" class="dot-item">SEP</a>
+                        </li>
+                        <li class="page" >
+                            <a href="javascript:void(0);" data-index="2" class="dot-item">OCT</a>
+                        </li>
+                        <li class="page" >
+                            <a href="javascript:void(0);" data-index="3" class="dot-item">NOV</a>
+                        </li>
+                        <li class="page" >
+                            <a href="javascript:void(0);" data-index="4" class="dot-item">DEC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inspired-button active"><a href="" class="active">VIEW ALL EVENTS</a> </div>
+            </div>
+        </div>
+        <!-- sites -->
+        <div id="sites">
+            <div class="container">
+                <div class="container__header">
+                    <h2 class="section-heading inspired__heading">MUST-SEE SITES</h2>
+                    <p class="section-desc">
+                        Take a 360-degree tour of some of the country's most compelling natural
+                        <br>
+                         wonders and cultural attractions right here.
+                    </p>
+                    <div class="wrap-thumb">
+                        <div class="row thumb-padding">
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="./img/thumb1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="https://www.vietnam.travel/sites/default/files/360Tour/HaLong/socialThumbnail.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="https://www.vietnam.travel/sites/default/files/360Tour/HoiAn/socialThumbnail.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row thumb-padding ">
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="https://www.vietnam.travel/sites/default/files/360Tour/NhaTrang2021/socialThumbnail.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="https://www.vietnam.travel/sites/default/files/360Tour/DaNang/socialThumbnail.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 no-padding">
+                                <div class="article zoomImg">
+                                    <a href="">
+                                        <img class="thumb" src="https://www.vietnam.travel/sites/default/files/360Tour/MySon/socialThumbnail.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider banner -->
+        <div id="slider-banner">
+            <div class="banner__content ">
+                <a href="">
+                    <img src="./img/sliderbanner1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- travel tips -->
+        <div id="travel-tips">
+            <div class="container">
+                <div class="container__header">
+                    <h2 class="section-heading ">TRAVEL TIPS</h2>
+                    <p class="section-desc">
+                        Prepare for your trip with these practical articles
+                    </p>
+                </div>
+                <ul>
+                    <li class="thumbnail">
+                        <a href="">
+                            <img src="https://www.vietnam.travel/sites/default/files/2019-11/Visas_1.jpg" alt="">
+                            <div class="thumbnail-desc">VISAS</div>
+                        </a>
+                    </li>
+                    <li class="thumbnail">
+                        <a href="">
+                            <img src="https://www.vietnam.travel/sites/default/files/2019-11/Transport_1.jpg" alt="">
+                            <div class="thumbnail-desc">TRANSPORT</div>
+                        </a>
+                    </li>
+                    <li class="thumbnail">
+                        <a href="">
+                            <img src="https://www.vietnam.travel/sites/default/files/2019-11/Weather%20white_1.jpg" alt="">
+                            <div class="thumbnail-desc">WEATHER</div>
+                        </a>
+                    </li>
+                    <li class="thumbnail">
+                        <a href="">
+                            <img src="https://www.vietnam.travel/sites/default/files/2019-11/Health%20and%20Safety_0.jpg" alt="">
+                            <div class="thumbnail-desc">SAFETY</div>
+                        </a>
+                    </li>
+                    <li class="thumbnail">
+                        <a href="">
+                            <img src="https://www.vietnam.travel/sites/default/files/2019-11/History%20white_0.jpg" alt="">
+                            <div class="thumbnail-desc">HISTORY</div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- NEWS VIETNAM -->
+                <div class="container__header">
+                    <h2 class="section-heading ">VIETNAM IN THE NEWS</h2>
+                    <p class="section-desc">
+                        Read about how Vietnam successfully contained the coronavirus.
+                    </p>
+                </div>
+                <div class="row" style="padding: 30px 100px ;">
+                    <div class="col-md-3 fix-margin">
+                        <div class="wrap-info">
+                            <a href="">
+                                <div class="news-thumb">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/essential_information_thumbnail/public/2021-12/World%20Travel%20Awards.png?itok=fWmcQ372" alt="">                                   
+                                </div>
+                                <div class="news-info">
+                                    <div class="news-info-desc">
+                                        Vietnam is announced as “Asia's Leading Destination 2021” by The World Travel Awards. 'Asia's Leadi ...
+                                        <div class="news-info-title">WTA</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fix-margin">
+                        <div class="wrap-info">
+                            <a href="">
+                                <div class="news-thumb">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/essential_information_thumbnail/public/2021-12/World%20Travel%20Awards.png?itok=fWmcQ372" alt="">                                   
+                                </div>
+                                <div class="news-info">
+                                    <div class="news-info-desc">
+                                        Vietnam is announced as “Asia's Leading Destination 2021” by The World Travel Awards. 'Asia's Leadi ...
+                                        <div class="news-info-title">WTA</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fix-margin">
+                        <div class="wrap-info">
+                            <a href="">
+                                <div class="news-thumb">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/essential_information_thumbnail/public/2021-12/World%20Travel%20Awards.png?itok=fWmcQ372" alt="">                                   
+                                </div>
+                                <div class="news-info">
+                                    <div class="news-info-desc">
+                                        Vietnam is announced as “Asia's Leading Destination 2021” by The World Travel Awards. 'Asia's Leadi ...
+                                        <div class="news-info-title">WTA</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fix-margin">
+                        <div class="wrap-info " >
+                            <a href="">
+                                <div class="news-thumb">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/essential_information_thumbnail/public/2021-12/World%20Travel%20Awards.png?itok=fWmcQ372" alt="">                                   
+                                </div>
+                                <div class="news-info">
+                                    <div class="news-info-desc">
+                                        Vietnam is announced as “Asia's Leading Destination 2021” by The World Travel Awards. 'Asia's Leadi ...
+                                        <div class="news-info-title">WTA</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- your moments -->
+        <div id="moments">
+            <div class="container">
+                <div class="container__header">
+                    <h2 class="section-heading ">SHARE YOUR STORY</h2>
+                    <p class="section-desc">
+                        Tag your best <span class="section-tag">#LiveFullyinVietnam</span> moments on Instagram
+                    </p>
+                </div>
+                <div class="content-insta">
+                    <div class="row">
+                        <div class="col-md-6 no-padding">
+                            <div class="row no-padding">
+                                <div class="col-md-6 no-padding">
+                                    <div class="article zoomImg">
+                                        <a href="">
+                                            <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2022-05/travelexanz_281275132_1040047316922226_3623177728061239312_n.jpg?itok=TLQA4D75" alt="">
+                                            <i class="fa-brands icon-insta fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6 no-padding">
+                                    <div class="article zoomImg">
+                                        <a href="">
+                                            <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2021-12/96220354_1354453951418442_6072488003870903396_n.jpg?itok=e7MEK1Dg" alt="">
+                                            <i class="fa-brands icon-insta fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-padding">
+                                <div class="col-md-6 no-padding">
+                                    <div class="article zoomImg">
+                                        <a href="">
+                                            <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2022-04/anhtai.bber_278766550_4815859208540172_9128666806782901085_n.jpg?itok=R4u9nYy7" alt="">
+                                            <i class="fa-brands icon-insta fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 no-padding">
+                                    <div class="article zoomImg">
+                                        <a href="">
+                                            <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2021-12/96220354_1354453951418442_6072488003870903396_n.jpg?itok=e7MEK1Dg" alt="">
+                                            <i class="fa-brands icon-insta fa-instagram"></i>
+                                        
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 no-padding" >
+                            <div class="article fix-img-inst zoomImg" style="height:97.2% ;">
+                                <a href="">
+                                    <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2021-12/258736879_665298018188528_663523562783419102_n.jpg?itok=P8XGyqpR" alt="">
+                                    <i class="fa-brands icon-insta fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inspired-button active"><a href="" class="active">VIEW MORE</a> </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="footer__container">
+            <div class="footer__sign-up">
+                <div class="footer__header">SIGN UP FOR OUR NEWSLETTER</div>
+                <div class="footer__text">
+                    Receive new travel stories from Vietnam once a month in your inbox.
+                </div>
+                <div class="footer__form-register">
+                    <input type="text" class="input-email" placeholder="Your email"> 
+                </div>
+                <button class="footer__btn">SIGN UP</button>
+            </div>
+            <div class="footer__useful">
+                <div class="footer__header">USEFUL LINKS</div>
+                <ul>
+                    <li>Stay at Home Kit</li>
+                    <li>Visas for Vietnam</li>
+                    <li>Beginner Guide</li>
+                    <li>FAQs</li>
+                    <li>Sitemap</li>
+                    <li>News & Media</li>
+                    <li>Industry Resources</li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__header">
+                    FOLLOW US ON  
+                </div>
+                <div class="social">
+                    <div> 
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="link-icon">
+                    <a href="">
+                        <img src="https://www.vietnam.travel/themes/custom/vietnamtourism/images/logo-bw.png" alt="">
+                    </a>
+                </div>
+                <p>
+                    Welcome to the official website of Vietnam National Administration of Tourism. Visit our social media pages for more travel inspiration.
+                </p>
+            </div>
+        </div>
+        <div class="footer__end">
+            <ul>
+                <li>© 2016 Official Website Vietnam Tourism</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

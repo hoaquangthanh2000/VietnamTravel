@@ -1,0 +1,993 @@
+*{
+    margin: 0;
+    padding: 0  ;
+}
+
+.clear{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* .zoomImg{
+    overflow: hidden;
+    margin: 0 auto;
+} */
+.zoomImg img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.zoomImg:hover img {
+    transform: scale(1.1);
+}
+
+#header{
+    height: 110px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+.header__nav-navbar li.header__nav-navbar-item{
+    height: 82px;
+}
+.header__nav-link{
+    display: inline-block;
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+    height: 26px;
+}
+.header__nav-link p{
+    display: inline-block;
+}
+.header__nav-link a{
+    color: rgb(185, 37, 37);
+}
+.header__nav-link-text{
+    color: rgb(176, 31, 31);
+    font-weight: 400;
+}
+#header .header__nav-style{
+    background-color: rgba(239, 233, 233, 0) !important;
+}
+#header .header__nav-navbar{
+    margin-left: 175px;
+}
+#header .header__nav-navbar-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    position: relative;
+    bottom: 7.5px;
+    align-items: center;
+}
+
+#header .header_nav-input-search{
+    position: relative;
+    margin-bottom: 15px;
+}
+#header .header-search{
+    line-height: 38px;
+    position: absolute;
+    right: 30px;
+}
+#header .header__nav-link-text:hover,
+#header .header-search:hover{
+    color: rgb(243, 70, 70);
+    cursor: pointer;
+}
+.header__nav-navbar-list .header__nav-navbar-item > a{
+    font-weight: 500;
+    color: rgb(137, 132, 132);
+    display: inline-block;
+
+}
+.header__nav-navbar-list .header__nav-navbar-item{
+    display: inline-block;
+    padding: 21px 15px;
+
+}
+
+#header .header__nav-navbar-item:hover ,
+#header .header__nav-navbar-item:hover > a {
+    cursor: pointer;
+    background-color: #ebebeb;
+    color: rgb(190, 52, 52);
+}
+#header .header__nav-livefully:hover>a{
+
+}
+
+#header .logoVN-travel{
+    position: absolute;
+    top: 0.5px;
+}
+
+
+
+.header__nav-navbar-item .nav__live-fully{
+    position: absolute;
+    background-color: #ebebeb;
+    display: inline-block;
+    left: 32px;
+    top: 82px;
+    padding: 20px;
+    min-width: 239.09px;
+    border-bottom: 3px solid rgb(150, 23, 23);
+    list-style-type: none;
+    display: none;
+}
+.header__nav-navbar-item > .nav__live-fully  a{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px ;
+    display: block;
+}
+
+.header__nav-navbar-list .header__nav-navbar-item:hover .nav__live-fully{
+    display: block;
+}
+
+.header__nav-navbar-list .header__nav-places{
+    position: relative;
+}
+@media (min-width:992px){
+    #header .header__nav-places-list{
+        position: absolute;
+        top: 100%;
+        width: calc(1361px + 175px);
+        display: flex;
+        left: -615px;
+        padding: 30px 160px;
+        display: none;
+        background-color: #ebebeb;
+        border-bottom: 3px solid rgb(150, 23, 23);
+    }
+}
+.cha{
+    margin: 0 auto;
+}
+
+#header .header__nav-places:hover .header__nav-places-list{
+    display: flex;
+}
+
+.places__northern > li > a {
+    white-space: nowrap;
+}
+
+#header .header__nav-navbar-list p.title{
+    color: #b2910e;
+    font-weight: 500;
+    text-transform: uppercase ;
+}
+#header .header__nav-navbar-list  a{
+    position: relative;
+    text-transform: none;
+    text-decoration: none;
+}
+
+#header .header__nav-navbar-list .header__nav-places a .info{
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 10px 0;
+}
+
+.header__nav-places-list .info__title{
+    font-weight: 500;
+}
+
+
+
+#header .header__nav-navbar-list .header__nav-places a img{
+    display: block;
+    max-width: 100%;
+}
+
+#header .header__nav-navbar-list ul li.has-arrow a{
+    color: #000;
+}
+#header .header__nav-navbar-list .header__nav-places .header__nav-places-list ul li.has-arrow{
+    list-style-type: none;
+    position: relative;
+    padding: 5px;
+}
+
+#header .header__nav-navbar-list .header__nav-places .header__nav-places-list ul li.has-arrow::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-right-color: black;
+    border-bottom-color: black;
+    transform: rotate(-45deg);
+    left: -25px;
+    bottom: 12px;
+}
+
+/* Map viet nam */
+
+#header .map-vietnam{
+    display: flex;
+    justify-content: center;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link{
+    position: absolute;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north span{
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    width: 212px;
+    float: left;
+    text-align: right;
+    left: calc(-145px + 134px);
+    position: absolute;
+    top: 36px;
+    color: #000;
+    font-weight: 600;
+}
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north::before,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.south::before,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central::before,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north::after,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.south::after,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central::after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+}
+/* north side */
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north::before{
+    content: "";
+    background: url(/img/map.north.png) 50% no-repeat;
+    left: calc(-276px + 134px);
+    width: 154px;
+    height: 86px;
+    transition: all .3s ease;
+}
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north::after{
+    content: "";
+    background: url(./img/icon-pin.png);
+    width: 23px;
+    height: 32px;
+    left: calc(-190px + 134px);
+    top: 23px;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover span{
+    border-bottom: 1px solid #a5190e;
+    color: #a5190e;
+}
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover.north::after,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.north:hover.north:before{
+    opacity: 1;
+}
+/* central side */
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central::before{
+    content: "";
+    background: url(/img/map.central.png) 50% no-repeat;
+    left: -102px;
+    width: 154px;
+    height: 285px;
+    top: 50px;
+    transition: all .3s ease;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central::after{
+    content: "";
+    background: url(./img/icon-pin.png);
+    width: 23px;
+    height: 32px;
+    left: calc(-137px+134px);
+    top: 150px;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central span{
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    width: 212px;
+    float: left;
+    text-align: right;
+    left: calc(-125px + 134px);
+    position: absolute;
+    top: 160px;
+    color: #000;
+    font-weight: 600;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover span{
+    border-bottom: 1px solid #a5190e;
+    color: #a5190e;
+}
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover.central::after,
+#header .container-fluid .header__nav-places .header__nav-places-list .link.central:hover.central::before{
+    opacity: 1;
+}
+
+/* south side */
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.south::before{
+    content: "";
+    background: url(/img/map.south.png) 50% no-repeat;
+    left: calc(-287px + 134px);
+    width: 200px;
+    height: 138px;
+    top: 252px;
+    transition: all .3s ease;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.south::after{
+    content: "";
+    background: url(./img/icon-pin.png);
+    width: 23px;
+    height: 32px;
+    left: calc(-176px + 134px );
+    top: 280px;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link.south span{
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    width: 215px;
+    float: left;
+    text-align: right;
+    left: calc(-170px + 134px);
+    position: absolute;
+    top: 317px;
+    color: #000;
+    font-weight: 600;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover span{
+    border-bottom: 1px solid #a5190e;
+    color: #a5190e;
+}
+
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover.south::after,
+#header .container-fluid .header__nav-places .header__nav-places-list .link:hover.south::before{
+    opacity: 1;
+}
+
+/* things to do */
+#header .header__nav-thingstodo{
+    position: absolute;
+    top: 100%;
+    width: 1535px;
+    display: flex;
+    display: none;
+    left: -340px;
+    padding: 30px 160px;
+    background-color: #ebebeb;
+    border-bottom: 3px solid rgb(150, 23, 23);
+}
+
+#header .header__nav-thingstodo ul li.has-arrow {
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0;
+}
+
+#header .header__nav-thingstodo ul li.has-arrow::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-right-color: black;
+    border-bottom-color: black;
+    transform: rotate(-45deg);
+    left: -25px;
+    bottom: 12px;
+}
+
+#header .header__nav-thingstodo .separate{
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 380px;
+    background-color: #959595;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.festival-events .clearfix{
+    list-style-type: none;
+}
+.header__nav-thingstodo .festival-events{
+    padding-left: 0 !important;
+}
+.header__nav-thingstodo .festival-events .clearfix a img{
+    max-width: 100%;
+    float: left;
+    height: 80px;
+}
+
+.header__nav-thingstodo .festival-events .clearfix a span{
+    display: block;
+    color: #fff;
+}
+
+.header__nav-thingstodo .festival-events .clearfix a{
+    height: 80px;
+    background-color: #000;
+    width: 470px;
+    display: block;
+    margin: 8px 0;
+}
+
+.fes-info .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header .fes-info .desc{
+    font: 14px;
+    color: #959595;
+}
+#header .fes-info .fes-content{
+    padding: 12px 0;
+    margin-left: 90px;
+}
+#header .red-link{
+    color: #a5190e;
+    margin-top: 5px;
+}
+
+.festival-events::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+}
+
+#header .header__nav-navbar-item:hover .header__nav-thingstodo{
+    display: flex;
+}
+
+
+/* slider */
+
+/* #slider{
+    margin-top: 110px;
+    padding-top: 50%;
+    background: url(./img/slider-vietnamtravel.jpg) top center / cover no-repeat;
+} */
+#slider video{
+    display: block;
+}
+
+/* content */
+
+
+#inspired{
+    
+    width: 100%;
+    height: 100%;
+    background: url(./img/background1.jpg) top / cover no-repeat;
+    padding-bottom: 40px;
+    /* background-size: 100% auto; */
+}
+
+.section-heading{
+    font-size: 35px;
+    color: #b2910e;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+ .section-desc{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+#content .inspired-nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 50px;
+}
+#moments .inspired-button a,
+#upcomming-events .inspired-button a,
+.inspired-button a {
+    min-width: 135px;
+    padding: 10px 0;
+    margin: 0 10px;
+    border: 1px solid #a5190e;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+#moments .inspired-button a.active::after,
+#upcomming-events .inspired-button a.active::after,
+.inspired-button a.active::after{
+    display: block;
+}
+
+#moments .inspired-button a.active,
+#upcomming-events .inspired-button a.active,
+.inspired-button a.active,
+.inspired-button a:hover{
+    background-image: 
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-tl.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-tr.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-br.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-bl.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0,100% 100%, 0 100%;
+    background-color: #a5190e;
+    color: #fff;
+    text-align: center;
+}
+#moments .inspired-button a,
+#upcomming-events  .inspired-button a,
+ .inspired-button a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+#upcomming-events .inspired-button a:hover
+ .inspired-button a:hover{
+    color: #fff;
+}
+
+#moments .inspired-button a::after,
+.inspired-button a::after{
+    content: "";
+    position: absolute;
+    border: 1px solid #b2910e;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+}
+
+ .inspired-button a:hover:after{
+    display: block;
+}
+
+#inspired .inspired__content{
+    padding: 0 50px;
+}
+
+
+/* upcomming-events */
+#upcomming-events{
+
+}
+#upcomming-events .wrap-events{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    background: url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-pattern.png) bottom;
+    background-size: 100px;
+}
+.slider-events .remove{
+    background-color: #a5190e;
+}
+.wrap-slider{
+    width: 100%;
+    overflow: hidden;
+    height: 235px;
+    position: relative;
+}
+.slider-events{
+    display: flex;
+    position: relative;
+    transition: transform .25s linear;
+}
+.slider-event-item{
+    height: 100%;
+    width: 100%;
+    flex: 1 0 100%;
+    user-select: none;
+    position: relative;
+}
+.slider-event-item > a > img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.slider-event-item .block-event{
+    width: 33.333333333333%;
+    float: left;
+    overflow: hidden;
+}
+
+.wrap-events .slider-event-item .info{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/home-event-mask.png) top no-repeat;
+    background-size: 100% 50%;
+    color: #fff;
+    padding: 25px;
+} 
+.slider-event-item a span.info .date{
+    font-size: 10px;
+}
+.slider-event-item a .info .title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+.slider-event-item a span.info .title:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 2px;
+    background: #ebebeb;
+    opacity: .6;
+}
+
+.wrap-events ul.paper{
+    list-style: none;
+    padding: 30px 0;
+    display: flex;
+    margin-top: 20px;
+}
+ .wrap-events > ul > li{
+    padding: 0 70px;
+    text-align: center;
+    display: inline;
+    position: relative;
+}
+
+.wrap-events > ul > li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #f7bd01;
+    margin-bottom: 20px;
+    bottom: 100%;
+}
+.wrap-events > ul > li > a::before{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background: #a5190e;
+    border: 2px solid #f7bd01;
+    width: 15px;
+    height: 15px;
+    bottom: 100%;
+    margin-bottom: 14px;
+    left: 90px;
+    transition: background-color .25s linear;
+}
+.wrap-events > ul > li > a.active::before{
+    background-color: #fff;
+
+}
+.wrap-events ul li:first-child::before{
+    left: 50%;
+}
+.wrap-events ul li:last-child:before {
+    left: auto;
+    right: 50%;
+}
+.wrap-events ul > li > a{
+    text-decoration: none;
+    color: #a5190e;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: #f7bd01;
+    padding: 5px 14px;
+}
+
+
+
+
+#sites .wrap-thumb a img.thumb,
+#inspired .inspired__content a img{
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#sites .wrap-thumb a ,
+#inspired .inspired__content a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#inspired .inspired__content > a img::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.article {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+}
+.article.big{
+    padding-bottom: 50%;
+}
+
+.inspired__content-desc_title{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    font-size: 14px;
+    padding: 8px;
+    color: #fff;
+    background: url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-pattern.png) top center / cover no-repeat;
+}
+
+.inspired__content-desc_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(15, 14, 14, 0.4);
+    min-height: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+#content .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wrap-thumb {
+    padding: 10px 100px 50px;
+}
+
+#sites .container .wrap-thumb a img.thumb:hover{
+    transition: all 1s ease;
+    width: 100%;
+}
+
+/* banner */
+.banner__content{
+
+}
+.banner__content a img{
+    width: 100%;
+}
+/* travel tips */
+#travel-tips ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+#travel-tips .thumbnail{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding: 40px;
+    height: 120px;
+}
+#travel-tips .thumbnail a img{
+    max-width: 100%;
+    height: 80px;
+}
+
+#travel-tips a{
+    text-decoration: none;
+    color: #000;
+} 
+#travel-tips a:hover .thumbnail-desc{
+    color: #b2910e;
+}
+#travel-tips .thumbnail-desc{
+    padding-top: 30px;
+}
+
+.news-info{
+    width: 263px;
+}
+.news-info-desc{
+    position: relative;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 10px;
+}
+.news-info-title{
+    position: absolute;
+    bottom: 100%;
+    background: url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-pattern.png) top center / cover no-repeat;
+    left: 0;
+    padding: 5px 30px;
+    color: #fff;
+}
+
+/* moments */
+#moments{
+    background-color: #ebebeb;
+}
+#moments .content-insta{
+    padding: 30px 80px 0;
+}
+.container__header .section-tag{
+    color: #a5190e;
+}
+
+
+
+.content-insta a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.inspired-button{
+    text-align: center;
+    padding: 20px 0 50px;
+}
+button.footer__btn:hover,
+ .inspired-button a:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.content-insta a .icon-insta{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.footer__container{
+    padding: 20px 200px;
+    display: flex;
+}
+
+.footer__sign-up{
+    padding: 30px;
+    width: 35%;
+}
+.footer__header{
+    color: #b2910e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer__text{
+    line-height: 1.2;
+    padding: 15px 0;
+}
+.footer__form-register{
+
+}
+.input-email{
+    width: 100%;
+    height: 45px;
+}
+button.footer__btn{
+    background-image: 
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-tl.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-tr.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-br.png),
+    url(https://www.vietnam.travel/themes/custom/vietnamtourism/images/bg-red-bl.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0,100% 100%, 0 100%;
+    background-color: #a5190e;
+    color: #fff;
+    min-width: 135px;
+    padding: 10px 0;
+    border: 1px solid #a5190e;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+button.footer__btn::after{
+    content: "";
+    position: absolute;
+    border: 1px solid #b2910e;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+}
+.footer__useful{
+    padding: 30px 100px;
+    width: 30%;
+}
+
+.footer__useful ul{
+    list-style: none;
+    padding-left: 0 !important;
+    margin-top: 10px;
+}
+
+.footer__contact{
+    padding: 30px;
+    width: 35%;
+    position: relative;
+}
+
+.footer__contact .social{
+    display: flex;
+}
+.footer__contact .social a{
+    color: #b2910e;
+    font-size: 32px;
+    padding: 0 2px;
+}
+.footer__contact p{
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.link-icon{
+    position: absolute;
+    right: 5px;
+    top: 60px;
+}
+.link-icon a img{
+    width: 100px;
+}
+.footer__end{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    position: relative;
+
+}
+.footer__end::before{
+    content: "";
+    border-top: 1px solid #a5190e;
+    width: 75%;
+    position: absolute;
+    bottom: 70px;
+}
+.footer__end ul{
+    display: flex;
+    list-style: none;
+}
+.footer__end ul li{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
